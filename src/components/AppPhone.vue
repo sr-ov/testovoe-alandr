@@ -16,8 +16,9 @@ defineProps<{
 		<span
 			class="number"
 			:class="{ white: textWhite, 'hide-text-mobile': hideTextMobile }"
-			>+7 (965) 569-89-98</span
 		>
+			+7 (965) 569-89-98
+		</span>
 	</a>
 </template>
 
