@@ -1,0 +1,18 @@
+@import './base.css';
+
+.container {
+	max-width: 1830px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.container-sm {
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+@media (max-width: 576px) {
+	.container-sm--px0 {
+		padding: 0;
+	}
+}
