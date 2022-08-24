@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { AppButton, AppCheckbox, AppCheckboxButton, AppInput } from '.'
 
-const variable = () => {}
-
 const leftCheckboxes = [
 	'хочу ёжика для себя',
 	'хочу ёжика для детей',
