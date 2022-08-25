@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import { useToggle } from '@vueuse/core'
+
 import IconCart from './icons/IconCart.vue'
 import IconBurger from './icons/IconBurger.vue'
-import { AppNav, AppPhone, AppLogo, MobileMenu, FadeTransition } from '.'
-import { useToggle } from '@vueuse/shared'
+import { AppNav, AppPhone, AppLogo, MobileMenu } from '.'
+import { useBodyScrollLock } from '@/composables/useBodyScrollLock'
 
 const items = [
 	{
@@ -20,6 +22,8 @@ const items = [
 ]
 
 const [mobileMenuVisible, toggleMobileMenuVisible] = useToggle(false)
+
+useBodyScrollLock(mobileMenuVisible)
 </script>
 
 <template>
